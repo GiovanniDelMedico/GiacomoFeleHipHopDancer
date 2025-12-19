@@ -140,7 +140,7 @@ export default function Scrivimi() {
           {/* Immagine laterale */}
           <div className="flex justify-center mt-4">
             <img
-              src="/FotoGiacomo/GiacomoGarage.webp"
+              src={new URL("/FotoGiacomo/GiacomoGarage.webp", import.meta.url).href}
               alt="D.Gio"
               className="rounded-2xl shadow-lg object-cover h-[650px] w-auto"
             />

@@ -15,7 +15,7 @@ export default function Bio() {
 
         {/* Card Verticale */}
         <CardOrizzontaleSx
-          img="/FotoGiacomo/GiacomoFeleposacrew.webp"
+          img={new URL("/FotoGiacomo/GiacomoFeleposacrew.webp", import.meta.url).href}
           title="Giacomo Fele"
           data-aos="fade-up"
           description="Giacomo Fele (1994), originario di Castel San Pietro Terme (BO), è un ballerino di danza Hip Hop che ha intrapreso un percorso di formazione professionale presso la Juste Debout School di Parigi tra il 2014 e il 2018. La sua crescita artistica è stata arricchita da esperienze in compagnie internazionali e da stage con ballerini proffessionisti della scena Hip Hop, consolidando una solida base tecnica e culturale."

@@ -9,7 +9,7 @@ export default function Home() {
       <section className="relative min-h-screen pt-16 bg-[#0b0c0e]">
         {/* Immagine come background */}
         <img
-          src="/FotoGiacomo/GiacomoGarage.webp"
+          src={new URL("/FotoGiacomo/GiacomoGarage.webp", import.meta.url).href}
           alt="Giacomo Fele"
           className="absolute inset-0 w-full h-full max-w-6xl mx-auto px-4 object-cover"
         />

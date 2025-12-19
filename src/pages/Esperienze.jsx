@@ -16,17 +16,17 @@ export default function Bio() {
 
         {/* Card Verticale */}
         <CardOrizzontaleSx
-          img="/FotoGiacomo/GiacomoFeleBallandoHipHop.webp"
+          img={new URL("/FotoGiacomo/GiacomoFeleBallandoHipHop.webp", import.meta.url).href}
           title="Freestyle"
           description="Giacomo Fele è un ballerino di Hip Hop Freestyle molto attivo sulla scena delle battle. Negli anni ha partecipato e vinto numerose competizioni, mettendo in gioco la propria creatività,tecnica  e capacità di improvvisazione. La sua presenza non si limita al ruolo di partecipante ma anche giudice, contribuendo con la sua esperienza e sensibilità artistica a valutare le performance di altri ballerini. "
         />
         <CardOrizzontaleDx
-        img="/FotoGiacomo/GiacomoFeleEnergiahiphop.webp"
+        img={new URL("/FotoGiacomo/GiacomoFeleEnergiahiphop.webp", import.meta.url).href}
           title="Insegnante e coreografo"
           description="Parallelamente alla carriera da performer, Giacomo ha sviluppato un’intensa attività di insegnamento e coreografia. Ha guidato workshops e corsi sia in Italia che all’estero, dall’Austria fino a scuole di danza italiane di rilievo. La sua ricerca artistica mira a trasmettere la cultura Hip Hop alle nuove generazioni, unendo tecnica ed espressività per formare ballerini consapevoli e creativi."
         />
         <CardOrizzontaleSx
-         img="/FotoGiacomo/GiacomoFelestilehiphop.webp"
+         img={new URL("/FotoGiacomo//GiacomoFelestilehiphop.webp", import.meta.url).href}
           title="Ballerino per show e compagnie"
           description="Nel corso degli anni, Giacomo ha calcato palchi importanti come il Prestige Dance Awards e il festival HIP HOP Collections al Musée du Quai Branly di Parigi. Ha collaborato con coreografi e realtà di rilievo quali Bruno Sharxilla, Mehdi Slimani (Compagnia NoMad) e il collettivo MOVEandART, consolidando un percorso artistico internazionale che lo ha reso protagonista di numerose esperienze performative e culturali."
         />

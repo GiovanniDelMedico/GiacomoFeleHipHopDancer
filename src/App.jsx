@@ -1,8 +1,7 @@
 // src/App.jsx
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import { useEffect } from "react";
 
-// Import delle tue pagine
 import Home from "./pages/Home";
 import Bio from "./pages/Bio";
 import Galleria from "./pages/Galleria";
@@ -14,29 +13,27 @@ import "aos/dist/aos.css";
 
 import Footer from "./components/Footer";
 
-
 export default function App() {
-   useEffect(() => {
+  useEffect(() => {
     AOS.init({
-      duration: 800, // durata animazioni in ms
-      once: true,    // se true, l’animazione avviene solo una volta
+      duration: 800,
+      once: true,
     });
   }, []);
-  return (
-    <Router>
-      <main>
-      <Routes>
-        {/* Rotte principali */}
-        <Route path="/" element={<Home />} />
-        <Route path="/bio" element={<Bio />} />
-        <Route path="/galleria" element={<Galleria />} />
-        <Route path="/esperienze" element={<Esperienze />} />
-        <Route path="/classi" element={<Classi />} />
-        <Route path="/scrivimi" element={<Scrivimi />} />
 
-      </Routes>
+  return (
+    <HashRouter>
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/bio" element={<Bio />} />
+          <Route path="/galleria" element={<Galleria />} />
+          <Route path="/esperienze" element={<Esperienze />} />
+          <Route path="/classi" element={<Classi />} />
+          <Route path="/scrivimi" element={<Scrivimi />} />
+        </Routes>
       </main>
-      <Footer/>
-    </Router>
+      <Footer />
+    </HashRouter>
   );
 }

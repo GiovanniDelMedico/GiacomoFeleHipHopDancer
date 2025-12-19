@@ -9,7 +9,8 @@ export default function SectionClassi() {
         {/* Immagine grande */}
         <div className="w-full mb-6">
           <img
-            src="/FotoGiacomo/GiacomoFeleBallandoHipHop.webp" // <-- immagine da public/FotoGiacomo
+            src={new URL("/FotoGiacomo/GiacomoFeleBallandoHipHop.webp", import.meta.url).href}
+             // <-- immagine da public/FotoGiacomo
             alt="Le mie classi"
             className="w-full h-96 object-cover rounded-xl shadow-lg md:object-[50%_30%]"
           />
