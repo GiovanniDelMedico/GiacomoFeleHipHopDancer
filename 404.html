@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>Redirecting…</title>
     <script type="text/javascript">
-      // Reindirizza SEMPRE alla root del repo 
-    window.location.replace("/GiacomoFeleHipHopDancer/");
+      // Prende la pathname e la passa a index.html
+      var repo = "/GiacomoFeleHipHopDancer";
+      var redirectTo = repo + "/index.html";
+      var fullUrl = redirectTo + window.location.search + window.location.hash;
+
+      // Usa history.replaceState per non creare loop
+      window.location.replace(fullUrl);
     </script>
   </head>
   <body>
